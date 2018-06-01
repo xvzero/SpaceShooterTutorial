@@ -6,11 +6,11 @@ public class Mover : MonoBehaviour
 {
     public float speed;
 
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
 
 	void Start() 
     {
-        rigidbody = GetComponent<Rigidbody>();
-        rigidbody.velocity = transform.forward * speed;
+        rb = GetComponent<Rigidbody>();
+        rb.velocity = transform.forward * speed;
 	}
 }

@@ -6,11 +6,11 @@ public class RandomRotator : MonoBehaviour
 {
     public float tumble;
 
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
 
 	void Start() 
     {
-        rigidbody = GetComponent<Rigidbody>();
-        rigidbody.angularVelocity = Random.insideUnitSphere * tumble;
+        rb = GetComponent<Rigidbody>();
+        rb.angularVelocity = Random.insideUnitSphere * tumble;
 	}
 }
